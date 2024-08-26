@@ -45,7 +45,7 @@ pool = multiprocessing.Pool(processes = multiprocessing.cpu_count())
 > [!NOTE]
 > **You can modify the `chunk_size` variable to adjust the number of password attempts processed at once.**
 
-# Speed Dominance - Cythonizing the script
+## Speed Dominance - Cythonizing the script
 
 - Cython is a superset of Python designed to give C-like performance with code that is written mostly in Python. Used primarily to optimize Python code by compiling it to C, which can significantly increase execution speed, especially in CPU-bound tasks.
 
