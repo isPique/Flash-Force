@@ -63,7 +63,7 @@ pool = multiprocessing.Pool(processes = multiprocessing.cpu_count())
 
   2. Install Cython and setuptools:
      ```bash
-     pip install Cython setuptools
+     pip install cython setuptools
      ```
   
   3. Compile the Cython code into a shared object file that can be imported into Python:
