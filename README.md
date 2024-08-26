@@ -60,14 +60,19 @@ pool = multiprocessing.Pool(processes = multiprocessing.cpu_count())
       ```bash
       cd Cythonized
       ```
+
+  2. Install Cython:
+     ```bash
+     pip install Cython
+     ```
   
-  2. Compile the Cython code into a shared object file that can be imported into Python:
+  3. Compile the Cython code into a shared object file that can be imported into Python:
   
       ```bash
       python setup.py build_ext --inplace
       ```
   
-  3. Run the compiled Cython code:
+  4. Run the compiled Cython code:
   
      ```bash
      python -c "import FlashForce; FlashForce.main()"
