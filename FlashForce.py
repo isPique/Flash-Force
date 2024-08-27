@@ -66,7 +66,7 @@ def generate_combinations(characters, length, chunk_size, start_position = 0):
         if chunk:
             yield chunk
 
-# Read a wordlist file line by line, starting from a specific line
+# Read the wordlist file line by line, starting from a specific line
 def read_wordlist(filepath, start_line = 0):
     with open(filepath, 'r', encoding = 'utf-8', errors = 'ignore') as file:
         for _ in range(start_line):
