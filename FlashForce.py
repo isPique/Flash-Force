@@ -60,8 +60,8 @@ def hash_and_check(args):
 # Generate combinations of characters for brute-force attack
 def generate_combinations(characters, length, chunk_size, start_position = 0):
     combinations = product(characters, repeat = length)  # Create all possible combinations
-    for _ in range(start_position):  # Skip combinations until start_position
-        next(combinations)
+    for _ in range(start_position):
+        next(combinations)  # Skip combinations until start_position
     for chunk in iter(lambda: list(islice(combinations, chunk_size)), []):  # Yield chunks of combinations
         if chunk:
             yield chunk
