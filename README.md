@@ -54,9 +54,9 @@
       cd Cythonized
       ```
 
-  2. Install Cython and setuptools:
+  2. Install required libraries:
      ```bash
-     pip install cython setuptools
+     pip install -r requirements.txt
      ```
   
   3. Compile the Cython code into a shared object file that can be imported into Python:
