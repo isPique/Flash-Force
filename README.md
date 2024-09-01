@@ -4,16 +4,6 @@
 - It supports cracking SHA-256 and MD5 hashes and can leverage multiple CPU cores to speed up the process.
 - The tool can save and resume sessions, making it practical for lengthy cracking attempts.
 
-## Brute-Force working principle
-
-```python
-pool = multiprocessing.Pool(processes = multiprocessing.cpu_count())
-```
-
-- By utilizing all available CPU cores, the script can optimize the parallelization of a brute-force attack by distributing the workload across multiple processes. Each process is responsible for calculating the hash of a specific combination of characters, allowing them to run concurrently. This parallel processing enables the script to perform multiple hash calculations simultaneously, leading to a significant speedup in the overall execution time compared to a single-threaded approach. By fully leveraging the CPU's capabilities, the brute-force process becomes much more efficient, potentially reducing the time required to complete the task.
-
-- Multiprocessing is faster than multi-threading.
-
 ## Usage
 
 1. Clone the repository:
@@ -33,6 +23,9 @@ pool = multiprocessing.Pool(processes = multiprocessing.cpu_count())
     ```bash
     python3 FlashForce.py
     ```
+
+> [!WARNING]
+> ***Use this tool responsibly and only for legitimate purposes!***
 
 # What makes it different
 
@@ -91,8 +84,15 @@ But even so, as you can see below, the script read 14.3 million lines of passwor
 ## Brute-Force Attack
 ![Brute-Force Attack](https://github.com/isPique/Flash-Force/blob/main/Images/Brute-Force%20Attack.png)
 
-> [!WARNING]
-> ***Use this tool responsibly and only for legitimate purposes!***
+### Brute-Force working principle
+
+```python
+pool = multiprocessing.Pool(processes = multiprocessing.cpu_count())
+```
+
+- By utilizing all available CPU cores, the script can optimize the parallelization of a brute-force attack by distributing the workload across multiple processes. Each process is responsible for calculating the hash of a specific combination of characters, allowing them to run concurrently. This parallel processing enables the script to perform multiple hash calculations simultaneously, leading to a significant speedup in the overall execution time compared to a single-threaded approach. By fully leveraging the CPU's capabilities, the brute-force process becomes much more efficient, potentially reducing the time required to complete the task.
+
+- Multiprocessing is faster than multi-threading.
 
 ## To-Do
 - [ ] Add More hashing algorithms
