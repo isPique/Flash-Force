@@ -86,7 +86,7 @@ def load_state(filename):
 # Main logic
 def main():
     try:
-        chunk_size = 100000
+        chunk_size = 100000  # Number of password attempts processed at each chunk
         cores = cpu_count()  # Get the number of CPU cores
         bruteforce_state_file = 'bruteforce_state.pkl'  # File to save brute-force state
         wordlist_state_file = 'wordlist_state.pkl'  # File to save wordlist state
