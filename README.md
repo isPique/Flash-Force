@@ -68,7 +68,7 @@
   4. Run the compiled Cython code:
   
      ```bash
-     python -c "import FlashForce; FlashForce.main()"
+     python -c "__import__('FlashForce').main()"
      ```
 
 ## Wordlist Attack
