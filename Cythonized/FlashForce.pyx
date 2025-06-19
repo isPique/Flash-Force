@@ -35,7 +35,7 @@ def display_banner():
           {3}.    ___{0}   {2}\____   ______________________________/{0}
               {3}/   ＼{0}      {2}\ノ{0}
             {3}∠)_ ● /  {5}/\ /\{0}                         {6}~{3} GitHub: {1}https://github.com/isPique
-               {3}/ /__{5}( • ω •){3}__{0}                   {6}~{3} Insta: {1}https://instagram.com/omrefarukk
+               {3}/ /__{5}( • ω •){3}__{0}                   {6}~{3} Insta: {1}https://instagram.com/omwrswagg
               {3}(       {5}∪ ∪{3}     ){0}
             {6}~~~~~~~~~~~~~~~~~~~~~~~~~{0}
           '''.format(DEFAULT, GREEN, RED, YELLOW, BLINK, MAGENTA, BLUE))
